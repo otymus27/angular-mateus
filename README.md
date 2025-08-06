@@ -156,3 +156,15 @@ Substitua feature/login pelo nome da sua branch.
 -  Ou seja, estas variáveis são propriedades da classe;
 -  E então teremos acesso a estes dados no arquivo .html, o template;
 -  A impressão é feita através de: {{nome_da_variavel}}
+
+## CSS no Angular
+
+-  Os estilos em aplicações de Angular podem ser feitos de duas maneiras;
+-  Global: utilizando o arquivo styles.css, que fica em src;
+-  Scoped: estilos a nível de componente, criamos quando damos um generate;
+
+## Compartilhamento de dados
+
+-  Em Angular podemos compartilhar dados do componente pai com o componente filho;
+-  Para isso, vamos disponibilizar na chamada do componente o nome do dado que será recebido com a seguinte sintaxe: [dado];
+-  E no código .ts do componente filho vamos utiliza o decorator @Inpunt, que tem como papel entregar o dado para o template;
