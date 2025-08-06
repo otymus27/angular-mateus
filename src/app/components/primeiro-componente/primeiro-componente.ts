@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
    templateUrl: './primeiro-componente.html',
    styleUrl: './primeiro-componente.scss',
 })
-export class PrimeiroComponente {}
+export class PrimeiroComponente {
+   nome: string = 'Fábio';
+   idade: number = 45;
+   hobbies = ['volei', 'games', 'trilhas'];
+   carro = {
+      nome: 'fit',
+      marca: 'honda',
+   };
+
+   saudacao() {
+      return `Olá, ${this.nome}`;
+   }
+}
