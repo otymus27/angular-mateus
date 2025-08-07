@@ -1,0 +1,29 @@
+<h2>📌 Estudo de Diretivas no Angular</h2>
+
+<!--Diretivas condicional if/else-->
+<h3>Uso de diretiva condicional</h3>
+
+@if (logado){
+   <p class="logado">Usuário logado</p>
+} @else {
+   <p class="nao_logado">Usuário não está logado</p>
+}
+
+<hr>
+
+<!--Diretivas repetição / iteração for-->
+<h3>Uso de diretiva de repetição ou iteração - for</h3>
+<p>Lista de carros:</p>
+@for (item of carros; track $index){
+   <ul>
+      <li>{{item}}</li>
+   </ul>
+}
+
+<hr>
+
+<!--Diretivas de estilos ngStyle-->
+<h3>Uso de diretiva de estilos - ngStyle e ngClass</h3>
+<p [ngStyle]="{ color: cor, fonteSize: fonte +'px' }">Texto estilizado utilizando diretiva - <span>ngStyle</span></p>
+<p [ngStyle]="{ color: cor, fonteSize: fonte +'px'}" [ngClass]="'letraMaiuscula'">Texto estilizado utilizando diretiva - <span>ngClass</span></p>
+<p [ngClass]="underline">Testando diretiva ngClass</p>

@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { PrimeiroComponente } from "./components/primeiro-componente/primeiro-componente";
+import {Diretivas} from './components/diretivas/diretivas';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PrimeiroComponente],
+   imports: [Diretivas],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
