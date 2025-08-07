@@ -13,5 +13,13 @@
 <p>{{ nome.toUpperCase() }}</p>
 <!-- FABIO -->
 
+<h3>Lista de hobbies:</h3>
+@for (item of hobbies; track $index){
+   <ul>
+      <li>{{item}}</li>
+   </ul>
+}
+
+
 <p>Hobbie que mais gosta: {{ hobbies[1] }}</p>
 <p>Nome do carro: {{ carro.nome }} - {{ carro.marca }}</p>
