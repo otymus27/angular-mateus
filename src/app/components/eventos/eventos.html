@@ -1,0 +1,24 @@
+<!--Eventos em angular-->
+<h3>Uso de eventos em Angular</h3>
+
+<p>Exemplo 1 - Evento de clique</p>
+<button (click)="exibir()" >Clique em mim</button>
+
+<hr>
+<p>Exemplo 2</p>
+<p>Horário: {{horario}}:{{minutos}}</p>
+<button (click)="saudacao()" >Clique aqui</button>
+<p></p>
+
+<hr>
+<p>Exemplo 3 - Evento de digitação - input</p>
+<input (input)="capturarTexto($event)" placeholder="Digite algo">
+
+<hr>
+<p>Exemplo 4 - Evento de tecla pressionada - keydow</p>
+<input (keydown)="teclaPressionada($event)">
+
+<hr>
+<p>Exemplo 5 - Evento de passagem de valor direto</p>
+<button (click)="dizerAlgo('Bom dia')">Dizer algo</button>
+

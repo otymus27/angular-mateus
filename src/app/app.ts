@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {Diretivas} from './components/diretivas/diretivas';
+import {Eventos} from './components/eventos/eventos';
 
 @Component({
   selector: 'app-root',
-   imports: [Diretivas],
+   imports: [Eventos],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
