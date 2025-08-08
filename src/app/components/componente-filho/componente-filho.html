@@ -7,3 +7,12 @@
 <h1>Dados do usuário</h1>
 <p>Email: {{ dados.email }}</p>
 <p>Profissão: {{ dados.profissao }}</p>
+
+
+<p>Olá, {{ nome }}!</p>
+<p>Mensagem recebida do pai é: {{ mensagemRecebida }}</p>
+
+<hr>
+<p>Enviar dados do compomente filho para o componente pai</p>
+
+<button (click)="EnviarParaOPai">Enviar para o pai</button>
